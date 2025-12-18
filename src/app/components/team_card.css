@@ -1,0 +1,41 @@
+.animated-border {
+  border: 4px solid #FFA300;
+  /* No border-radius for sharp corners */
+  pointer-events: none;
+  animation: spin 2s linear infinite;
+  box-sizing: border-box;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.glow-animated-border {
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  width: calc(100% + 16px);
+  height: calc(100% + 16px);
+  z-index: 1;
+  pointer-events: none;
+  border: 4px solid transparent;
+  background: conic-gradient(
+    #FFA300 0%,
+    #fffbe6 10%,
+    #FFA300 30%,
+    #fffbe6 50%,
+    #FFA300 70%,
+    #fffbe6 90%,
+    #FFA300 100%
+  );
+  border-radius: 0;
+  animation: glow-spin 2s linear infinite;
+  box-shadow: 0 0 24px 8px #FFA30044;
+  opacity: 0.8;
+}
+
+@keyframes glow-spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+} 

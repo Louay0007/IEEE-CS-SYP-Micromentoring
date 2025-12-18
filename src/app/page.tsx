@@ -1,0 +1,91 @@
+'use client'
+import React, {useEffect, useState} from "react";
+import Mission from "~/app/components/mission";
+import MicroMentoring from "~/app/components/micromentoring";
+import Benefits from "~/app/components/benefits";
+import HowToJoin from "~/app/components/howtojoin";
+import TeamSection from "~/app/components/team";
+import Contact from "~/app/components/contact";
+import {AppProgressBar as ProgressBar} from 'next-nprogress-bar';
+import Head from "next/head";
+
+
+export default function Home() {
+    const [playing, setPlaying] = useState(true)
+
+    const [windowSize, setWindowSize] = useState({width: 0, height: 0});
+    const [navBarH, setNH] = useState(0);
+    useEffect(() => {
+        setNH(document.querySelector("#navbar")!.clientHeight);
+        setWindowSize({height: window.innerHeight, width: window.innerWidth});
+
+    }, []);
+    const isMobile = windowSize.width <= 720 && windowSize.height <= 1280
+    useEffect(() => {
+        const navbar: HTMLElement = document.querySelector("#navbar")!;
+        if (navbar) {
+            if (playing) {
+                navbar.style.opacity = "0";
+            } else {
+                navbar.style.opacity = "1";
+            }
+        }
+        const scroll: HTMLElement = document.querySelector("#scrollmark")!;
+        if (scroll) {
+            if (playing) {
+                scroll.style.opacity = "0";
+            } else {
+                scroll.style.opacity = "1";
+            }
+        }
+    }, [playing]);
+    return (
+        <div>
+
+            <ProgressBar
+                height="4px"
+                color="#FFA300"
+                options={{showSpinner: false}}
+                shallowRouting
+            />
+            <Head>
+                <meta name="description" content="Serving computing at its best with inclusion and diversity is the prime motto of the IEEE CS ISSATM. This society was created keeping in mind IEEE's continued commitment to providing options at best. The IEEE Computer Society ISSATM is driven by the central goals of equity, diversity, inclusion, and yearn to serve computing at its perfection. This is the home page for IEEE Computer Society ISSATM." />
+            </Head>
+            <div className='h-screen w-screen overflow-hidden relative'>
+                <video src="/cs-microchip.mp4" className="mx-auto relative" autoPlay muted height={
+                    isMobile ? windowSize.height * 0.75 : windowSize.height - navBarH
+                } width={isMobile ? windowSize.width * 0.8 : windowSize.width} playsInline
+                       style={{height: isMobile ? windowSize.height * 0.75 : windowSize.height - navBarH, width: isMobile ? windowSize.width * 0.8 : windowSize.width}}
+                       onEnded={() => setPlaying(false)}/>
+            </div>
+            <div className='transition duration-500' id='scrollmark'>
+                <p className='flex absolute overflow-hidden right-0 -mt-64 lg:-mt-64 text-lg mr-6 text-ieeeyellow -rotate-90'>Scroll</p>
+                <div
+                    className='flex absolute overflow-hidden right-0 -mt-48 lg:-mt-48 mr-6 motion-safe:animate-bounce bg-ieeeyellow rounded-full p-2'>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
+                         stroke="currentColor" className="w-8 h-8">
+                        <path strokeLinecap="round" strokeLinejoin="round"
+                              d="M19.5 5.25l-7.5 7.5-7.5-7.5m15 6l-7.5 7.5-7.5-7.5"/>
+                    </svg>
+                </div>
+            </div>
+            <div className="">
+                <div className="bg-black">
+                    <Mission/>
+                    <MicroMentoring/>
+                    <Benefits/>
+                    <HowToJoin/>
+                    <TeamSection/>
+                    {/*<div>*/}
+                    {/*    <div className="w-full py-12 bg-fixed">*/}
+                    {/*        <div className=" mx-auto px-4 lg:px-8" data-aos="fade-up">*/}
+                    {/*            <p className="text-5xl text-center font-bold text-ieeeyellow">Events Gallery</p>*/}
+                    {/*        </div>*/}
+                    {/*    </div>*/}
+                    {/*</div>*/}
+                    <Contact/>
+                </div>
+            </div>
+        </div>
+    );
+}
