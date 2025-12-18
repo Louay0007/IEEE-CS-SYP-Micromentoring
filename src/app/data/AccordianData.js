@@ -4,8 +4,8 @@ const AccordionData = [
         accordionAnswer: 'We are a vibrant community of tech enthusiasts united by a common goal – to foster a dynamic coding environment through an exciting array of tech and semi-tech events. Our mission is to inspire innovation, collaboration, and continuous learning!'
     },
     {
-        accordionQuestion: 'How can I join IEEE ISSATM CS??',
-        accordionAnswer: 'Membership in IEEE ISSATM CS is open to everyone. We conduct a yearly membership drive, providing an opportunity for all interested individuals to join our community.'
+        accordionQuestion: 'How can I join IEEE CS SYP Micromentoring??',
+        accordionAnswer: 'Membership in IEEE CS SYP Micromentoring is open to everyone. We conduct a yearly membership drive, providing an opportunity for all interested individuals to join our community.'
     },
     {
         accordionQuestion: 'Are there any prerequisites for joining the Organization ?',
