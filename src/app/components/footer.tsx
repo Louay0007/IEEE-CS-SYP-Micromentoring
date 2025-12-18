@@ -125,7 +125,7 @@ export default function Footer() {
                    {/* Copyright Notice */}
                    <div className="border-t border-gray-700 pt-4 sm:pt-6 pb-3 sm:pb-4">
                        <p className="text-center text-xs sm:text-sm text-white leading-relaxed max-w-4xl mx-auto px-4">
-                           Copyright 2025 IEEE - All rights reserved. A public charity, IEEE is the world's largest technical professional organization dedicated to advancing technology for the benefit of humanity.
+                           Copyright 2025 IEEE - All rights reserved. A public charity, IEEE is the world&apos;s largest technical professional organization dedicated to advancing technology for the benefit of humanity.
                        </p>
                    </div>
                </div>

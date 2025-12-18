@@ -1,5 +1,4 @@
 import React, { useEffect, useRef } from 'react';
-import styles from './style.module.scss';
 import { motion } from 'framer-motion';
 import { menuSlide } from '../anim';
 import NextLink from 'next/link';

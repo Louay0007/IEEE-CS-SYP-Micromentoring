@@ -5,6 +5,7 @@ import whiteLogo from "../assets/White.png";
 import Image from "next/image";
 import Link from "next/link";
 import Header from "./header";
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 
 export default function Navbar() {
     return(

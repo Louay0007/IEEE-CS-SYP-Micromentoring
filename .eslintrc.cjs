@@ -1,5 +1,9 @@
 /** @type {import("eslint").Linter.Config} */
 module.exports = {
+  parser: "@typescript-eslint/parser",
+  parserOptions: {
+    project: true,
+  },
   extends: [
     "next/core-web-vitals",
     "plugin:@typescript-eslint/recommended-type-checked",

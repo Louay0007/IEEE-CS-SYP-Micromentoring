@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { AlertCircle, Calendar, UserPlus, Users, CheckCircle2, Mail, ExternalLink, Clock, Target, UserCheck, MessageSquare, TrendingUp, Award } from 'lucide-react';
+import { AlertCircle, Calendar, UserPlus, Users, CheckCircle2, Clock, Target, UserCheck, MessageSquare, TrendingUp, Award } from 'lucide-react';
 
 const HowToJoin = () => {
     const menteeSteps = [
@@ -105,7 +105,7 @@ const HowToJoin = () => {
                                 <div className="flex-1">
                                     <h3 className="text-xl sm:text-2xl font-bold text-red-400 mb-2">Current Status</h3>
                                     <p className="text-gray-300 text-sm sm:text-base lg:text-lg leading-relaxed">
-                                        Call for new mentors and mentees is currently <span className="font-bold text-red-400">closed</span>. Check back or email us if you'd like to get involved.
+                                        Call for new mentors and mentees is currently <span className="font-bold text-red-400">closed</span>. Check back or email us if you&apos;d like to get involved.
                                     </p>
                                 </div>
                             </div>

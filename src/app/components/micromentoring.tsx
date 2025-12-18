@@ -207,7 +207,7 @@ const MicroMentoring = () => {
                                         The μ Symbol Meaning
                                     </h3>
                                     <p className="text-gray-300 text-sm sm:text-base lg:text-lg mb-4 sm:mb-6 leading-relaxed">
-                                        <span className="text-ieeeyellow font-semibold">Micro</span> (Greek letter <span className="text-2xl text-ieeeyellow">μ</span>, mu) is a unit prefix in the metric system denoting a factor of <span className="text-ieeeyellow font-semibold">one millionth</span> and comes from the Greek <span className="italic">mikrós</span>, meaning <span className="text-ieeeyellow font-semibold">"small."</span>
+                                        <span className="text-ieeeyellow font-semibold">Micro</span> (Greek letter <span className="text-2xl text-ieeeyellow">μ</span>, mu) is a unit prefix in the metric system denoting a factor of <span className="text-ieeeyellow font-semibold">one millionth</span> and comes from the Greek <span className="italic">mikrós</span>, meaning <span className="text-ieeeyellow font-semibold">&quot;small.&quot;</span>
                                     </p>
                                     <p className="text-gray-400 mb-8">The μ in our logo represents:</p>
                                     

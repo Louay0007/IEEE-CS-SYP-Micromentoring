@@ -3,9 +3,6 @@
 import React from 'react';
 import Link from "next/link";
 import Image from "next/image";
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-ignore
-import CountUp from "react-countup";
 import {motion} from "framer-motion";
 import whiteLogo from "../assets/Light.png";
 import csMicroLogo from "../assets/micro.png";

@@ -115,7 +115,7 @@ const Contact = () => {
                                 <div className="flex-1 text-center lg:text-left">
                                     <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-ieeeyellow mb-2 sm:mb-3">Questions or Feedback?</h3>
                                     <p className="text-gray-300 text-sm sm:text-base lg:text-lg leading-relaxed">
-                                        We'd love to hear from you! Whether you have questions about the IEEE CS SYP Micro Mentoring program, want to share feedback, or are interested in becoming a mentor or mentee, don't hesitate to reach out through any of the channels above.
+                                        We&apos;d love to hear from you! Whether you have questions about the IEEE CS SYP Micro Mentoring program, want to share feedback, or are interested in becoming a mentor or mentee, don&apos;t hesitate to reach out through any of the channels above.
                                     </p>
                                 </div>
                             </div>

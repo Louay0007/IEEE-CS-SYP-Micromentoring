@@ -26,9 +26,10 @@ interface TeamMember {
 }
 
 export function ECTeamCard() {
+  const ecTeam: TeamMember[] = ECTeamData as TeamMember[];
   return (
     <>
-      {ECTeamData.map((data: TeamMember, index: React.Key | null | undefined) => (
+      {ecTeam.map((data: TeamMember, index: React.Key | null | undefined) => (
         <div key={index}>
           <div className="relative flex justify-center items-center mx-auto w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl aspect-square">
             <div className="relative overflow-hidden transition duration-500 transform w-full h-full">
@@ -79,9 +80,10 @@ export function ECTeamCard() {
 }
 
 export function WebTeamCard() {
+  const webTeam: TeamMember[] = WebTeamData as TeamMember[];
   return (
     <>
-      {WebTeamData.map((data: TeamMember, index: React.Key | null | undefined) => (
+      {webTeam.map((data: TeamMember, index: React.Key | null | undefined) => (
         <div key={index}>
           <div className="relative flex justify-center items-center mx-auto w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl aspect-square">
             <div className="relative overflow-hidden transition duration-500 transform w-full h-full">

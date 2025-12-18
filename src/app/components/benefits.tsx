@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { GraduationCap, Briefcase, Target, Users2, TrendingUp, Heart, Award, Network, Shield, CheckCircle2, ChevronDown, Star, Lightbulb, Sparkles } from 'lucide-react';
+import { GraduationCap, Briefcase, Target, TrendingUp, Heart, Award, Network, Shield, CheckCircle2, ChevronDown, Star, Lightbulb, Sparkles } from 'lucide-react';
 
 const Benefits = () => {
     const [activeTab, setActiveTab] = useState<'mentees' | 'mentors'>('mentees');
@@ -188,7 +188,7 @@ const Benefits = () => {
                             >
                                 <span className="flex items-center gap-2">
                                     <Lightbulb className="w-5 h-5" />
-                                    What You'll Do as a Mentee
+                                    What You&apos;ll Do as a Mentee
                                 </span>
                                 <ChevronDown className={`w-5 h-5 transition-transform duration-300 ${expandedMentee ? 'rotate-180' : ''}`} />
                             </button>
@@ -287,7 +287,7 @@ const Benefits = () => {
                             >
                                 <span className="flex items-center gap-2">
                                     <Lightbulb className="w-5 h-5" />
-                                    What You'll Do as a Mentor
+                                    What You&apos;ll Do as a Mentor
                                 </span>
                                 <ChevronDown className={`w-5 h-5 transition-transform duration-300 ${expandedMentor ? 'rotate-180' : ''}`} />
                             </button>
@@ -426,7 +426,7 @@ const Benefits = () => {
                                 >
                                     <span className="flex items-center gap-2">
                                         <Lightbulb className="w-5 h-5" />
-                                        What You'll Do
+                                        What You&apos;ll Do
                                     </span>
                                     <ChevronDown className={`w-5 h-5 transition-transform ${expandedMentee ? 'rotate-180' : ''}`} />
                                 </button>
@@ -494,7 +494,7 @@ const Benefits = () => {
                                 >
                                     <span className="flex items-center gap-2">
                                         <Lightbulb className="w-5 h-5" />
-                                        What You'll Do
+                                        What You&apos;ll Do
                                     </span>
                                     <ChevronDown className={`w-5 h-5 transition-transform ${expandedMentor ? 'rotate-180' : ''}`} />
                                 </button>
